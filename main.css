@@ -39,7 +39,7 @@ header.container-header {
   display: grid;
   grid-area: header;
   background-color: black;
-  background-image: url(Image/komputer.jpg);
+  background-image: url(image/komputer.jpg);
   background-blend-mode: luminosity;
   background-position: right;
   background-repeat: no-repeat;
@@ -52,11 +52,10 @@ main.container-main {
   grid-area: content;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 2fr);
+  grid-template-rows: repeat(2, 2fr);
   grid-template-areas:
     "data data"
-    "bio bio"
-    "gallery gallery";
+    "bio bio";
   /* justify-items: center;
   align-items: center; */
 }
@@ -108,9 +107,6 @@ div.section-subscribers {
   text-align: center;
 }
 
-div.section-subscribers p {
-}
-
 div.section-views {
   text-align: center;
   grid-area: views;
@@ -127,3 +123,94 @@ section.biography {
   padding: 10rem;
 }
 
+section.biography .btn-subscribe {
+  padding: 0.2em 2.25em;
+}
+
+@media all and (max-width: 1000px) {
+  section.biography {
+    padding: 10rem 5rem;
+  }
+
+  header.container-header {
+    background-size: 200%;
+    background-position: center center;
+  }
+
+  div.container-isi-header {
+    background: rgba(0, 0, 0, 0.7);
+    width: 450px;
+  }
+}
+
+@media all and (max-width: 840px) {
+  section.biography {
+    /* padding: ; */
+    margin: auto;
+    /* width: 100%; */
+  }
+  section.biography h3,
+  section.biography p {
+    display: none;
+  }
+
+  section.biography a {
+    padding: 0.5em 3.25em;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .section-data {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 350px);
+    grid-template-areas:
+      "subscriber"
+      "views";
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 505px) {
+  div.container-isi-header {
+    margin-left: 0;
+  }
+  header.container-header {
+    /* background-image: none; */
+    background-size: 400%;
+  }
+}
+
+@media all and (max-width: 450px) {
+  div.container-isi-header {
+    margin: 10px;
+  }
+
+  div.container-isi-header {
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  header.container-header {
+    /* background-image: none; */
+    background-size: 450%;
+  }
+
+  section.biography {
+    padding: 0;
+    margin: 45px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .section-data {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section.biography a {
+    color: black;
+    border: 1px solid black;
+  }
+}
