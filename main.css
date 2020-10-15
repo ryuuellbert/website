@@ -39,7 +39,7 @@ header.container-header {
   display: grid;
   grid-area: header;
   background-color: black;
-  background-image: url(Image/komputer.jpg);
+  background-image: url(image/komputer.jpg);
   background-blend-mode: luminosity;
   background-position: right;
   background-repeat: no-repeat;
@@ -155,7 +155,11 @@ section.biography .btn-subscribe {
   }
 
   section.biography a {
+    /* margin-right: 200px;
+    width: 100%;
+    height: 100%; */
     padding: 0.5em 3.25em;
+    /* padding: 1em; */
   }
 }
 
@@ -173,7 +177,10 @@ section.biography .btn-subscribe {
 
 @media all and (max-width: 505px) {
   div.container-isi-header {
+    font-size: small;
+    width: 100%;
     margin-left: 0;
+    text-align: center;
   }
   header.container-header {
     /* background-image: none; */
@@ -183,7 +190,7 @@ section.biography .btn-subscribe {
 
 @media all and (max-width: 450px) {
   div.container-isi-header {
-    margin: 10px;
+    margin: 0px;
   }
 
   div.container-isi-header {
@@ -200,7 +207,7 @@ section.biography .btn-subscribe {
 
   section.biography {
     padding: 0;
-    margin: 45px;
+    margin: 65px;
     width: 100%;
     background-color: rgb(255, 255, 255);
   }
@@ -210,7 +217,8 @@ section.biography .btn-subscribe {
   }
 
   section.biography a {
-    color: black;
-    border: 1px solid black;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
   }
 }
