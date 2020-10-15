@@ -39,7 +39,7 @@ header.container-header {
   display: grid;
   grid-area: header;
   background-color: black;
-  background-image: url(image/komputer.jpg);
+  background-image: url(Image/komputer.jpg);
   background-blend-mode: luminosity;
   background-position: right;
   background-repeat: no-repeat;
